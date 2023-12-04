@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Создать заявку</title>
+</head>
+<body>
+    <div class="header">
+        <div class="panel">
+            <h1>ЖК Услуги</h1>
+            <a href="../index.html" class="header-button">Главная</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="application-form">
+            <div class="application-form-header">
+                <p>Оставить заявку</p>
+            </div>
+            <div class="application-form-content">
+                <div class="input-group">
+                    <label>Имя</label>
+                    <input id="applicantName" type="text" placeholder="Имя">
+                </div>
+                <div class="input-group">
+                    <label class="indent-label">Адрес</label>
+                    <input type="text" id="address" placeholder="Адрес">
+                </div>
+                <div class="input-group">
+                    <label class="indent-label">Дата</label>
+                    <input type="date" id="dateOfWork">
+                </div>
+                <div class="input-group">
+                    <label class="indent-label">Характер работ</label>
+                    <input type="text" id="typeOfWork" placeholder="Характер работ">
+                </div>
+                <div class="input-group">
+                    <label class="indent-label">Объём работ</label>
+                    <input type="text" id="scaleOfWork" placeholder="Объём работ">
+                </div>
+                <div class="error-message" id="error-message">
+                    Данные введены некорректно
+                </div>
+                <div class="form-button-container">
+                    <div class="button" id="submit-application-button">Отправить</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

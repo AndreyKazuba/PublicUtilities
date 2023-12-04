@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Войти</title>
+</head>
+<body>
+    <div class="header">
+        <div class="panel">
+            <h1>ЖК Услуги</h1>
+            <a href="../index.html" class="header-button">Главная</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="application-form">
+            <div class="application-form-header">
+                <p>Войти</p>
+            </div>
+            <div class="application-form-content">
+                <div class="input-group">
+                    <label>Логин</label>
+                    <input id="login" type="text" placeholder="Логин">
+                </div>
+                <div class="input-group">
+                    <label class="indent-label">Пароль</label>
+                    <input type="password" id="password" placeholder="Пароль">
+                </div>
+                <div class="error-message" id="error-message">
+                    Неверный логин или пароль
+                </div>
+                <div class="form-button-container">
+                    <div class="button" id="login-button">Войти</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./login.js"></script>
+</html>

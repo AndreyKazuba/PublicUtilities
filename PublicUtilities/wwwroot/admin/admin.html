@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Админка</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="panel">
+            <h1>ЖК Услуги</h1>
+            <a href="../" class="header-button">Главная</a>
+            <a class="header-button active" id="applications-button">Заявки</a>
+        </div>
+        <a class="header-button log-out" id="log-out-button">Выйти</a>
+    </div>
+    <div class="main" id="main">
+    </div>
+    <div id="processModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-content-header">
+                <p>Обработать заявку</p>
+            </div>
+            <div class="modal-content-body">
+                <div class="workers-list" id="worker-list">
+                </div>
+                <div class="error-message" id="modal-warning">
+                    Необходимо выбрать рабочего
+                </div>
+                <div class="modal-buttons">
+                    <div class="button" id="close-modal-button">Отменить</div>
+                    <div class="button" id="confirm-processing-button">Подтвердить</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="./admin.js"></script>
+
+</html>
